@@ -1,5 +1,7 @@
 {
   "name": "SatiPasala",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
