@@ -10,7 +10,7 @@
     <ion-card class="welcome-card" *ngFor="let post of newsPosts">
       <ion-img src="{{ post.jetpack_featured_media_url }}"></ion-img>
       <ion-card-header>
-        <ion-card-subtitle>{{ post.date }}</ion-card-subtitle>
+        <ion-card-subtitle>{{ post.date | date:'longDate' }}</ion-card-subtitle>
         <ion-card-title [innerHTML]="post.title.rendered"></ion-card-title>
       </ion-card-header>
       <ion-card-content [innerHTML]="post.excerpt.rendered">
